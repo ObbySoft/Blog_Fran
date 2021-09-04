@@ -4,23 +4,16 @@
 
 @layer base {
   body {
-    @apply dark:bg-gray-800;
+    @apply bg-pageBg;
   }
 
-  p,
-  span,
   small,
-  li,
   summary,
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
-    @apply dark:text-light_white;
-  }
-
   h1 {
     @apply text-4xl;
     @apply font-sans;
@@ -63,17 +56,14 @@
   }
 
   a {
-    @apply text-pink-600;
+    @apply text-primary;
     @apply hover:underline;
     @apply font-bold;
-    @apply dark:text-yellow-600;
   }
 
   blockquote {
     @apply rounded-md p-6 pl-8 italic;
     @apply bg-gradient-to-r from-yellow-600 via-yellow-600;
-    @apply dark:border-r-0 dark:border-l-8 dark:border-pink-600 dark:bg-gray-800;
-    @apply dark:from-transparent dark:to-transparent;
   }
 
   blockquote * {
@@ -95,9 +85,8 @@
   }
 }
 
-.nsj-post-content img {
-  /* This helps with outdated svgs */
-  @apply dark:bg-white;
+.card-subheading-info {
+  @apply font-mono;
 }
 
 .gatsby-highlight,

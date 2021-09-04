@@ -1,10 +1,8 @@
 import React from "react";
 import { Link, navigate } from "gatsby";
 import Tags from "./Tags";
-import { oneline } from "../utils/strTag";
 
-// TODO better define this structure
-export interface IProps {
+interface IProps {
   slug: string;
   title: string;
   content: string;
@@ -14,7 +12,7 @@ export interface IProps {
   tags: Array<string>;
 }
 
-export default function PostCard(props: IProps): JSX.Element {
+const LatestPost = (props: IProps) => {
   const { slug, title, content, authorId, date, readingTime, tags } = props;
 
   function onClick(_e: React.MouseEvent<HTMLElement, MouseEvent>): void {
@@ -22,23 +20,17 @@ export default function PostCard(props: IProps): JSX.Element {
   }
 
   return (
-    <article
+    <div
+      className="w-full sm:min-h-250 lg:w-1/3 bg-latestPostBg p-2 rounded-md shadow-sm flex flex-col px-4 justify-between"
       onClick={onClick}
-      className={oneline`
-        bg-postBg p-3 rounded-md
-        border-b border-l border-gray-200 cursor-pointer 
-        flex flex-col
-        space-y-1
-        sm:w-3/4
-        w-full
-        !mt-4
-        min-h-200
-    `}
     >
-      <div className="">
-        <h3 className="p-0">
-          <Link to={slug}>{title}</Link>
-        </h3>
+      <div>
+        <div className="text-primary pt-1">
+          <h3 className="p-0">
+            <Link to={slug}>{title}</Link>
+          </h3>
+        </div>
+
         <div className="p-1 text-sm card-subheading-info">
           <div>
             {`${date} | ${readingTime}`}
@@ -46,11 +38,17 @@ export default function PostCard(props: IProps): JSX.Element {
             <span className="font-bold text-secondary text-sm">{authorId}</span>
           </div>
         </div>
+
+        <section className="mt-2">
+          <p
+            className=" text-xl mb-3"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
+        </section>
       </div>
-      <section>
-        <p dangerouslySetInnerHTML={{ __html: content }} />
-      </section>
       <Tags tags={tags} className="!mt-auto pt-5 mb-2" />
-    </article>
+    </div>
   );
-}
+};
+
+export default LatestPost;

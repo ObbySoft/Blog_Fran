@@ -34,8 +34,6 @@ export default function Bio(props: IProps) {
       my-5
 
       border-pink-700
-      dark:border-gray-50
-      dark:border-opacity-25
       `}
     >
       <Image

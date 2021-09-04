@@ -41,7 +41,7 @@ export function NavItem(props: INavItemProps) {
     return null;
   }
   return (
-    <LinkContainer className="rounded-md border-pink-600 border p-5 m-1">
+    <LinkContainer className="rounded-md border-secondary border p-5 m-1">
       <Link to={props.to} rel={props.rel}>
         {props.children}
       </Link>

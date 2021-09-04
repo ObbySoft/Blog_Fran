@@ -25,9 +25,11 @@ export function Tag(props: ITagProps): JSX.Element {
       className={`
       m-0.5 rounded px-2
       text-xs cursor-pointer
-      bg-yellow-600 dark:bg-transparent
-      text-black dark:text-pink-600
-      font-bold
+      bg-tagBg
+      text-secondary
+      font-mono
+      pb-0
+      !py-1
       `}
     >
       {props.children}

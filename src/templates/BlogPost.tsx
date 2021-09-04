@@ -5,7 +5,6 @@ import { IBlogPostBySlugQuery } from "../../graphql-types";
 import Bio from "../components/Bio";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
-import NewsletterSubscribe from "../components/NewsletterSubscribe";
 import SeoFooter from "../components/SeoFooter";
 import BuyMeCoffee from "../components/BuyMeCoffee";
 import Patreon from "../components/Patreon";
@@ -52,7 +51,7 @@ export default function BlogPostTemplate(props: IProps) {
           <Tags tags={tags} />
           <header className="pb-3">
             <h1> {post.frontmatter?.title} </h1>
-            <div className="py-3 text-sm text-gray-700 dark:text-light_white">
+            <div className="py-3 text-sm text-gray-700">
               {`${post.frontmatter.date} • ${post.fields.readingTime.text}`}
             </div>
             <Bio author={author} />
@@ -69,7 +68,6 @@ export default function BlogPostTemplate(props: IProps) {
               <Patreon />
             </div>
           </section>
-          <NewsletterSubscribe bounce={true} />
         </article>
 
         <div className="py-4">
