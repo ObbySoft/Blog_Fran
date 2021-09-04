@@ -1,14 +1,10 @@
 module.exports = {
-  pathPrefix: "/nosleepjavascript-blog",
+  pathPrefix: "/Blog_Fran/",
   siteMetadata: {
-    title: `NoSleep Javascript Blog`,
+    title: `New Blog`,
     author: `franleplant`,
-    description: `A blog by franleplant about Software development, education, human relationships and the machine.`,
-    siteUrl: `https://nosleepjavascript.com`,
-    //TODO remove
-    social: {
-      twitter: ``,
-    },
+    description: `A blog by franleplant about ...`,
+    siteUrl: `https://obbysoft.github.io/Blog_Fran/`,
   },
   plugins: [
     {
@@ -130,6 +126,7 @@ module.exports = {
         //allExtensions: true, // defaults to false
       },
     },
+    // Slowing down development
     {
       resolve: `gatsby-plugin-graphql-codegen`,
       options: {
