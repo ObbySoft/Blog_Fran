@@ -33,7 +33,7 @@ export default function Bio(props: IProps) {
       flex items-center max-w-lg border-t border-b py-5
       my-5
 
-      border-pink-700
+      border-secondary
       `}
     >
       <Image

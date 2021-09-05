@@ -2,12 +2,9 @@ import React from "react";
 import { graphql, PageProps } from "gatsby";
 
 import { IBlogPostBySlugQuery } from "../../graphql-types";
-import Bio from "../components/Bio";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import SeoFooter from "../components/SeoFooter";
-import BuyMeCoffee from "../components/BuyMeCoffee";
-import Patreon from "../components/Patreon";
 import PostNavigator from "../components/PostNavigator";
 import PaperContainer from "../components/PaperContainer";
 
@@ -54,20 +51,12 @@ export default function BlogPostTemplate(props: IProps) {
             <div className="py-3 text-sm text-gray-700">
               {`${post.frontmatter.date} • ${post.fields.readingTime.text}`}
             </div>
-            <Bio author={author} />
           </header>
 
           <section
             className="space-y-5 nsj-post-content"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-
-          <section className="flex items-center -m-1">
-            <BuyMeCoffee className="m-1" />
-            <div className="m-1">
-              <Patreon />
-            </div>
-          </section>
         </article>
 
         <div className="py-4">

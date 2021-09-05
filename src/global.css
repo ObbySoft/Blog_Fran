@@ -63,7 +63,7 @@
 
   blockquote {
     @apply rounded-md p-6 pl-8 italic;
-    @apply bg-gradient-to-r from-yellow-600 via-yellow-600;
+    @apply border-l-8 border-secondary bg-gray-50;
   }
 
   blockquote * {
