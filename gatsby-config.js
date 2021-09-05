@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
-    title: `New Blog`,
+    title: `Randomleplants`,
     author: `franleplant`,
     description: `A blog by franleplant about ...`,
     siteUrl: `https://randomleplants`,
@@ -106,8 +106,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `NoSleepJavascript blog`,
-        short_name: `NoSleepJavascript`,
+        name: `Randomleplants blog`,
+        short_name: `Randomleplants`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

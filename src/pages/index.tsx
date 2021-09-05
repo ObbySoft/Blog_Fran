@@ -18,7 +18,7 @@ export default function BlogIndex(props: IProps) {
   return (
     <Layout location={props.location} title={siteTitle}>
       <div className="space-y-3 p-3 !pt-0 sm:!pt-5 lg:p-20">
-        <SEO title="NoSleep Javascript blog by franleplant" />
+        <SEO title="Randomleplants" />
         {/* hidden */}
         <div className="hidden">
           <p className="sm:w-3/4 pl-2 mx-auto font-mono text-xl text-secondary">

@@ -24,14 +24,14 @@ export default function Layout(props: IProps) {
         description={props.description}
         author={props.author}
       />
-      <div className="">
-        <section className="">
+      <div>
+        <section>
           <NavMenu />
         </section>
-        <main className="">{children}</main>
+        <main>{children}</main>
       </div>
       <footer className="p-3 text-center mt-auto hidden md:block">
-        © {new Date().getFullYear()}, nosleepjavascript.com
+        © {new Date().getFullYear()}, randomleplants.com
       </footer>
     </div>
   );

@@ -48,7 +48,7 @@ export default function SEO(props: IProps) {
         {
           property: `og:image`,
           // Needs to be an absolute url
-          content: `https://nosleepjavascript.com${logo?.publicURL}`,
+          content: `https://randomleplants.com${logo?.publicURL}`,
         },
         {
           property: `og:type`,
