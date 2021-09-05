@@ -1,10 +1,10 @@
 module.exports = {
-  pathPrefix: "/Blog_Fran/",
+  pathPrefix: "/",
   siteMetadata: {
     title: `New Blog`,
     author: `franleplant`,
     description: `A blog by franleplant about ...`,
-    siteUrl: `https://obbysoft.github.io/Blog_Fran/`,
+    siteUrl: `https://randomleplants`,
   },
   plugins: [
     {
