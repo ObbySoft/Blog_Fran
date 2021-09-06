@@ -4,7 +4,7 @@ import { graphql, PageProps } from "gatsby";
 import { IBlogPostBySlugQuery } from "../../graphql-types";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
-import SeoFooter from "../components/SeoFooter";
+// import SeoFooter from "../components/SeoFooter";
 import PostNavigator from "../components/PostNavigator";
 import PaperContainer from "../components/PaperContainer";
 
@@ -28,13 +28,7 @@ interface IProps extends PageProps<IBlogPostBySlugQuery, IPageContext> {}
 export default function BlogPostTemplate(props: IProps) {
   const { previous, next } = props.pageContext;
   const post = props.data.markdownRemark;
-  const {
-    title,
-    description,
-    author,
-    tags = [],
-    seoFooter = "",
-  } = post.frontmatter;
+  const { title, description, author, tags = [] } = post.frontmatter;
 
   return (
     <Layout
@@ -63,7 +57,7 @@ export default function BlogPostTemplate(props: IProps) {
           <PostNavigator previous={previous} next={next} />
         </div>
 
-        <SeoFooter data={Array.isArray(seoFooter) ? seoFooter : [seoFooter]} />
+        {/* <SeoFooter data={Array.isArray(seoFooter) ? seoFooter : [seoFooter]} /> */}
       </PaperContainer>
     </Layout>
   );
