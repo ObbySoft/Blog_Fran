@@ -10,7 +10,7 @@ export default function PaperContainer(props: IProps): JSX.Element {
   return (
     <div
       className={oneline`
-        lg:max-w-4xl m-auto lg:mt-10 p-3 md:p-10 rounded-md
+        lg:max-w-xl m-auto lg:mt-10 p-3 md:p-10 rounded-md
         ${props.className}
       `}
     >
