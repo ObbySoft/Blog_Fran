@@ -13,21 +13,26 @@ export default function NavMenu(): JSX.Element {
       </h1>
 
       <div className="flex flex-col md:flex-row md:mx-auto sm:w-3/4 w-full max-w-screen-xl ml-2 sm:ml-0">
+        {/*
         <Link
           to="/about"
           className="flex-1 leading-10 md:p-2 text-md hover:text-opacity-80 flex-grow-0 mx-auto"
         >
           About
         </Link>
-        {/* <a
+         <a
           href={`mailto:nosleeptechblog@gmail.com?subject=Contact from website`}
           className="flex-1 text-start leading-10 md:p-2 text-md hover:text-opacity-80 flex-grow-0"
         >
           Contact
         </a> */}
       </div>
-      <div className="flex flex-col sm:flex-row justify-between border-b border-t border-secondary py-3 mt-4 w-full sm:w-3/4 max-w-screen-xl md:mx-auto">
-        <p>I talk about Programming, Tech Culture and random stuff.</p>
+      <div className="flex flex-col justify-between border-b border-t border-secondary py-3 mt-4 w-full sm:w-3/4 max-w-screen-xl md:mx-auto items-center">
+        <p>A blog by the multiple people I inhabit, in English and Spanish.</p>
+        <p>
+          Un blog escrito por las múltiples personas que habito, en Ingles y en
+          Español
+        </p>
       </div>
     </div>
   );
