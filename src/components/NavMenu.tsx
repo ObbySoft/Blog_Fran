@@ -8,7 +8,7 @@ export default function NavMenu(): JSX.Element {
       <h1 className="md:mx-auto sm:w-3/4 w-full max-w-screen-xl mt-1 sm:mt-3 flex">
         <Link to={`/`} className="flex items-end mx-auto !no-underline">
           <img src={logo} alt={"Randomleplants Blog"} className="h-24" />
-          <h1>Randomleplants</h1>
+          <h1>Random Leplants</h1>
         </Link>
       </h1>
 
@@ -28,8 +28,10 @@ export default function NavMenu(): JSX.Element {
         </a> */}
       </div>
       <div className="flex flex-col justify-between border-b border-t border-secondary py-3 mt-4 w-full sm:w-3/4 max-w-screen-xl md:mx-auto items-center">
-        <p>A blog by the multiple people I inhabit, in English and Spanish.</p>
-        <p>
+        <p className="text-center">
+          A blog by the multiple people I inhabit, in English and Spanish.
+        </p>
+        <p className="text-center">
           Un blog escrito por las múltiples personas que habito, en Ingles y en
           Español
         </p>
