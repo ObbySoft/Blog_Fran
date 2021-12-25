@@ -42,6 +42,6 @@ tags:
 
 A single life is not enough and you better enjoy this fucking ride.
 
-While it last...
+While it lasts...
 
 ![Abstract image of something mysterious, perhaps a tree](./galaxy.jpg)
