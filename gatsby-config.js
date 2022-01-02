@@ -127,15 +127,15 @@ module.exports = {
       },
     },
     // Slowing down development
-    {
-      resolve: `gatsby-plugin-graphql-codegen`,
-      options: {
-        codegenConfig: {
-          typesPrefix: "I",
-          avoidOptionals: true,
-        },
-      },
-    },
+    //{
+    //resolve: `gatsby-plugin-graphql-codegen`,
+    //options: {
+    //codegenConfig: {
+    //typesPrefix: "I",
+    //avoidOptionals: true,
+    //},
+    //},
+    //},
 
     {
       resolve: `gatsby-plugin-google-adsense`,
